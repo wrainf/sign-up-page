@@ -162,10 +162,16 @@ input{
     margin-bottom: 16px;
 }
 
-
-input:invalid{
-    border: 2px solid #b91c1c;
+.vinput:valid,
+.valid{
+    border: 2px solid rgb(106, 255, 47);
 }
+
+.vinput:invalid,
+.error{
+    border:2px solid #b91c1c;
+}
+
 
 input:focus{
     border: 2px solid #324d69;
@@ -173,14 +179,12 @@ input:focus{
     
 }
 
-input:valid{
-    border: 2px solid #69ff71;
-}
-
 .indicator{
     color: #b91c1c;
     font-size: 12px;
 }
+
+
 
 
 
