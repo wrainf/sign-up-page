@@ -9,11 +9,16 @@
 </head>
 <body>
     <div class="image-sidebar">
-        <!-- <img src="./images/tim-stief-YFFGkE3y4F8-unsplash.jpg"> -->
-        <div class="welcome">Welcome To This Awesome Website!</div>
-        <div class="welcome-subtext">Already have an account? Thats great! You can login by clicking the button below. </div>
-        <button>Login</button>
-        <div class="credit">Photo by <a href="https://unsplash.com/@timstief">Tim Stief</a></div>
+            
+            <div class="welcome-container">
+                <div class="greeting">
+                
+                    <div class="welcome">Welcome To This Awesome Website!</div>
+                    <div class="subtext">Already have an account? Thats great! You can login by clicking the button below. </div>
+                    <a class="login">Login</a>
+                </div>
+                <div class="credit">Photo by <a href="https://unsplash.com/@jordansteranka">Jordan Steranka </a> </div>
+            </div>    
     </div>
 
     <div class="content">
@@ -27,27 +32,39 @@
                 <div class="inputs">
 
                     <div class="row">
-                        <label for="first-name">*FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name" required>
+                        <div class="input-row">
+                            <label for="first-name">*FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
         
-                        <label for="last-name">*LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name" required>
+                        <div class="input-row">
+                            <label for="last-name">*LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <label for="email">*EMAIL</label>
-                        <input type="email" id="email" name="email" required>
+                        <div class="input-row">
+                            <label for="email">*EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
         
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <div class="input-row">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
                     </div>
                     
                     <div class="row">
-                        <label for="password">*PASSWORD</label>
-                        <input type="password" id="password" name="password" required minlength="6">
+                        <div class="input-row">
+                            <label for="password">*PASSWORD</label>
+                            <input type="password" id="password" name="password" required minlength="6">
+                        </div>
         
-                        <label for="confirm-password">*CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <div class="input-row">
+                            <label for="confirm-password">*CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
                     </div>
                     
                 </div>
@@ -57,7 +74,7 @@
                 
             </div>
 
-            <button type="submit">Create Account!</button>
+            <button class="submit" type="submit">Create Account!</button>
         </form>
 
     </div>
