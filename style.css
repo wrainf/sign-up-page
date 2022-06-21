@@ -184,6 +184,12 @@ input:focus{
     font-size: 12px;
 }
 
+.submit:active{
+    background-color: #fff7f4;
+    border: 2px solid var(--theme);
+    color: var(--theme);
+}
+
 
 
 
